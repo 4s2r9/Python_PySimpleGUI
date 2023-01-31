@@ -28,6 +28,7 @@ while True:
     if event == '-CREATE_QR_CODE-':
         
         def add(module):
+            # QRコード設定
             qr = qrcode.QRCode(
                 version = 5,
                 error_correction=qrcode.constants.ERROR_CORRECT_H,
@@ -36,6 +37,7 @@ while True:
             )
             qr.add_data(values['-URL-'])
             img = qr.make_image(image_factory=StyledPilImage, module_drawer=module())
+            # 画像名
             img.save("QRcode.png")
             window['-QR_CODE_IMG-'].update('./QRcode.png')
 
