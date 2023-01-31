@@ -1,5 +1,5 @@
 #  PySimpleGUIを使いアプリを作る
-***
+
 ## アプリ仕様
 QRコードを生成できるアプリを作る↓以下の内容を使用する  
 https://github.com/4s2r9/Python_QRcode  
